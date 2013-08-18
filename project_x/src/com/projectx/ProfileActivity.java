@@ -1,5 +1,6 @@
 package com.projectx;
 
+import java.util.HashMap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -52,7 +53,8 @@ public class ProfileActivity extends Activity {
 			public void onClick(View v) {
 				// Perform action on click
 				String androidId = Secure.ANDROID_ID;
-				UserProfiles.addUserProfile(androidId, firstName, lastName, profilePicturePath);
+				SingleUserProfile profile = new SingleUserProfile(androidId, firstName, lastName, profilePicturePath);
+				SingleUserProfile.setUserProfile(profile);
 				Intent intent = new Intent(getApplication(), PeopleListActivity.class);
 				startActivity(intent);
 			}

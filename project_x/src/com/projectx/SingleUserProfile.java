@@ -6,16 +6,26 @@ import java.util.HashMap;
 import android.provider.Settings.Secure;
 
 public class SingleUserProfile {
+	private static SingleUserProfile userProfile = null;
 	private String androidId;
 	private String firstName;
 	private String lastName;
 	private String profilePicturePath;
 	
+
 	public SingleUserProfile(String androidId, String firstName, String lastName, String profilePicturePath) {
 		this.androidId = androidId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.profilePicturePath = profilePicturePath;
+	}
+
+	public static void setUserProfile(SingleUserProfile profile) {
+		userProfile = profile;
+	}
+
+	public static SingleUserProfile getUserProfile() {
+		return userProfile;
 	}
 
 	public String getAndroidId() {
@@ -49,24 +59,4 @@ public class SingleUserProfile {
 	public void setProfilePicturePath(String profilePicturePath) {
 		this.profilePicturePath = profilePicturePath;
 	}
-	
-}
-
-// Represents a collection of chat records with everyone else.
-final class UserProfiles {
-	// Maps unique id of the person (we are talking to)
-	// to list of chat records.
-	private static HashMap<String, ArrayList<SingleUserProfile>> userProfiles = new HashMap<String, ArrayList<SingleUserProfile>>();
-
-	private UserProfiles() {
-	}
-
-	public static void addUserProfile(String androidId, String firstName, String lastName, String profilePicturePath) {
-		SingleUserProfile user = new SingleUserProfile(androidId, firstName, lastName, profilePicturePath);
-		if (!userProfiles.containsKey(androidId)) {
-			userProfiles.put(androidId, new ArrayList<SingleUserProfile>());
-		}
-		userProfiles.get(androidId).add(user);
-	}
-
 }

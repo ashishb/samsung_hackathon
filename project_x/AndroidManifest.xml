@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PeopleListActivity" />
+        <activity android:name="com.projectx.PeopleListActivity" android:exported="false" />
+				<activity android:name="com.projectx.ChatActivity" android:exported="false" />
     </application>
 
 </manifest>
