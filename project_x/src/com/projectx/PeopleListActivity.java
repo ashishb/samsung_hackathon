@@ -16,7 +16,7 @@ public class PeopleListActivity extends ListActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-      setContentView(R.layout.activity_chat);
+      setContentView(R.layout.activity_people_list);
 			String personId;
       ListView listView = getListView();
       listView.setTextFilterEnabled(true);
