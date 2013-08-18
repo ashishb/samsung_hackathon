@@ -23,7 +23,7 @@
 	    android:layout_width="300dp"
 	    android:layout_height="match_parent"
 	    android:background="#FFFFFF"
-	    android:text="Type your message here."/>
+	    android:hint="Type your message here."/>
 	<Button android:id="@+android:id/send"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
