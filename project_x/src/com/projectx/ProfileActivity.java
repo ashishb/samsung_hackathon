@@ -1,5 +1,7 @@
 package com.projectx;
 
+import com.samsung.chord.ChordManager;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -9,6 +11,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -17,11 +20,20 @@ import android.widget.ImageView;
 public class ProfileActivity extends Activity {
 
 	private static int RESULT_LOAD_IMAGE = 1;
-
+	private static final String TAG = "[ProjectX]";
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_profile);
+		try {
+	    ChordWrapper.initializeChord(new NodeActivity(), this);
+	    ChordWrapper.start(ChordManager.INTERFACE_TYPE_WIFIP2P);
+    } catch (Exception e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	    Log.d(TAG, e.toString());
+    }
 
 		final Button buttonLoadImage = (Button) findViewById(R.id.buttonPhotoPicker);
 		buttonLoadImage.setOnClickListener(new View.OnClickListener() {
