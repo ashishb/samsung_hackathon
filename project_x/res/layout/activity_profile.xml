@@ -29,7 +29,13 @@
         android:layout_height="wrap_content"
         android:hint="@string/enter_last_name"
         android:textSize="@dimen/sub_title_text" />
-
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:contentDescription="@string/image_view"/>
+    
     <Button
         android:id="@+id/buttonPhotoPicker"
         android:layout_width="match_parent"

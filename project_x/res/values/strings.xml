@@ -6,7 +6,8 @@
     <string name="create_your_profile">Create Your Profile!</string>
     <string name="enter_first_name">First Name</string>
     <string name="enter_last_name">Last Name</string>
-    <string name="photo_picker">Select</string>
+    <string name="photo_picker">Select A Profile Photo</string>
     <string name="create_profile">Create</string>
+    <string name="image_view">Profile Image View</string>
 
 </resources>
