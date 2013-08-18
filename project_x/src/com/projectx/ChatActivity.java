@@ -7,11 +7,12 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class PeopleListActivity extends ListActivity {
+public class ChatActivity extends ListActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class PeopleListActivity extends ListActivity {
         personId = i.getStringExtra(Constants.PERSON_ID);
       } else {
 				personId = Constants.TEST;
-        Log.e(Constants.TAG, "PeopleListActivity called with incorrect intent. Something is wrong here");
+        Log.e(Constants.TAG, "ChatActivity called with incorrect intent. Something is wrong here");
       }
       ArrayList<SingleChatRecord> chatRecords = ChatRecords.getAllRecordsForThePerson(personId);
       Log.d(Constants.TAG, "Hello world");
@@ -35,10 +36,17 @@ public class PeopleListActivity extends ListActivity {
         messages.add(s.getMessage());
 				Log.d(Constants.TAG, s.getMessage());
       }      
-      if (chatRecords != null) {
+      if (messages != null) {
+      	Log.d(Constants.TAG, "Hello world 2");
         ArrayAdapter<String> listAdapter = new ArrayAdapter<String>(this,
             android.R.layout.simple_list_item_1, messages);
 				listView.setAdapter(listAdapter);
 			}
   }
+
+ @Override
+ public void onListItemClick(ListView l, View v, int position, long id) {
+	 // Do nothing.
+ }
+
 }
