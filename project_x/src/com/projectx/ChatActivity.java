@@ -46,7 +46,7 @@ public class ChatActivity extends ListActivity {
 			}
   }
 
-	public void sendMessage() {
+	public void sendMessage(View v) {
 		EditText chatbox = (EditText) findViewById(R.id.chatbox);
 		String message = chatbox.getText().toString();
 		FakeChordWrapper.sendMessage(personId, message);
