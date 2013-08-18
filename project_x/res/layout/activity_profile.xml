@@ -1,7 +1,8 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -9,8 +10,42 @@
     tools:context=".ProfileActivity" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/newProfileGreeting"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/create_your_profile"
+        android:textSize="@dimen/title_text" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_name"
+        android:textSize="@dimen/sub_title_text" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_last_name"
+        android:textSize="@dimen/sub_title_text" />
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:contentDescription="@string/image_view"/>
+    
+    <Button
+        android:id="@+id/buttonPhotoPicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_picker" />
+    
+    <Button
+        android:id="@+id/buttonProfileCreator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_profile" />
+
+</LinearLayout>
