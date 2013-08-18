@@ -9,16 +9,18 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class ChatActivity extends ListActivity {
 
+	String personId;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_chat);
-			String personId;
       ListView listView = getListView();
       listView.setTextFilterEnabled(true);
       Intent i = getIntent();
@@ -43,6 +45,12 @@ public class ChatActivity extends ListActivity {
 				listView.setAdapter(listAdapter);
 			}
   }
+
+	public void sendMessage() {
+		EditText chatbox = (EditText) findViewById(R.id.chatbox);
+		String message = chatbox.getText().toString();
+		FakeChordWrapper.sendMessage(personId, message);
+	}
 
  @Override
  public void onListItemClick(ListView l, View v, int position, long id) {
