@@ -10,7 +10,7 @@ class SingleChatRecord {
   private String message;
   private int timestamp;  // Timestamp in local timezone of the phone.
 
-  public void SingleChatRecord(int type, String message, int timezone) {
+  public SingleChatRecord(int type, String message, int timezone) {
     this.type = type;
     this.message = message;
     this.timestamp = timestamp;
