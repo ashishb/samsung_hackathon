@@ -1,4 +1,4 @@
 samsung_hackathon
 =================
 
-Samsung HAckathon
+Samsung Hackathon
