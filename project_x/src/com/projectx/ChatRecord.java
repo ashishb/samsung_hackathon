@@ -82,10 +82,10 @@ final class ChatRecords {
 
   public static ArrayList<SingleChatRecord> getAllRecordsForThePerson(String personId) {
     if (!chats.containsKey(personId)) {
+			// First time talking to this user.
       Log.e(Constants.TAG, "Key " + personId + "not found.");
-      return null;
-    } else {
-      return chats.get(personId);
-    }
+			chats.put(personId, new ArrayList<SingleChatRecord>());
+		}
+			return chats.get(personId);
   }
 }
