@@ -12,10 +12,29 @@
     android:background="#d3d3d3"
     android:layout_weight="1"
     android:drawSelectorOnTop="false"/>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    >
+	<EditText android:id="@+android:id/chatbox"
+	    android:layout_width="300dp"
+	    android:layout_height="match_parent"
+	    android:background="#FFFFFF"
+	    android:text="Type your message here."/>
+	<Button android:id="@+android:id/send"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+			android:background="#d9d9d9"
+			android:text="Send "
+		 	android:onClick="sendMessage" />
+	</LinearLayout>
 <TextView android:id="@android:id/empty"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:text="Loading..."/>
+    android:background="#d3d3d3"
+    android:text="No past messages found."/>
 </LinearLayout>
 
