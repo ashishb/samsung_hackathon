@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default1">#cdd1c9</color>
+    <color name="default2">#646d79</color>
+    <color name="focused1">#686e77</color>
+    <color name="focused2">#40474f</color>
+    <color name="pressed1">#686e77</color>
+    <color name="pressed2">#40474f</color>
+    <color name="stroke">#00000000</color>
+    <color name="translucence">#CCAAAAAA</color>
+
+</resources>

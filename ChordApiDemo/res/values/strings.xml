@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+		<string name="app_name">ProjectX</string>
+    <string name="select_all">Select all</string>
+    <string name="file">File</string>
+    <string name="from_ps_file_ps">Receive %2$s from %1$s?</string>
+    <string name="sending_ps_failed">Sending %s failed</string>
+    <string name="receiving_ps_failed">Receiving %s failed</string>
+    <string name="sending_failed_message">Sending failed message</string>
+    <string name="not_support_file">Unable to send. File type not supported</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="ps_sent_to_ps">%1$s sent to %2$s</string>
+    <string name="ps_receive_from_ps">%1$s receive from %2$s</string>
+    <string name="accepted_receiving_ps_from_ps">Accepted receiving %1$s from %2$s</string>
+    <string name="rejected_receiving_ps">Rejected receiving %s</string>
+    <string name="sending_to_ps">Sending to %s</string>
+    <string name="receiving_from_ps">Receiving from %s</string>
+    <string name="sending_ps_rejected_by_ps">Sending %1$s rejected by %2$s</string>
+    <string name="ps_transfer_cancelled_by_ps">%1$s transfer cancelled by %2$s</string>
+    <string name="start_chord">Start Chord</string>
+    <string name="stop_chord">Stop Chord</string>
+    <string name="join_channel">Join Channel</string>
+    <string name="leave_channel">Leave Channel</string>
+    <string name="public_channel">Public Channel</string>
+    <string name="joined_channel">Joined Channel</string>
+    <string name="send_data_file">Send data/file</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="mobile_ap">Mobile AP</string>
+    <string name="wifi_direct">Wi-Fi Direct</string>
+    <string name="title">Chord API Demo</string>
+    <string name="description">Select network for using Chord</string>
+    <string name="no_device_description">No network connection. Connect to networks and try again</string>
+    <string name="must_select">Select at least one node</string>
+    <string name="input_channel_name">Enter new channel name</string>
+    <string name="new_message">New message from %1$s\n: %2$s</string>
+
+    <string name="more">more</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="create_your_profile">Create Your Profile!</string>
+    <string name="enter_first_name">First Name</string>
+    <string name="enter_last_name">Last Name</string>
+    <string name="photo_picker">Select A Profile Photo</string>
+    <string name="create_profile">Create</string>
+    <string name="image_view">Profile Image View</string>
+</resources>

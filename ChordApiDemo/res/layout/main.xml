@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/interfacetest_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.samsung.chord.samples.apidemo.InterfaceTestFragment" />
+
+    <fragment
+        android:id="@+id/channeltest_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.samsung.chord.samples.apidemo.ChannelTestFragment" />
+
+    <fragment
+        android:id="@+id/datatest_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.samsung.chord.samples.apidemo.DataTestFragment" />
+
+</LinearLayout>
